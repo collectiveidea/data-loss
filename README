@@ -1,0 +1,5 @@
+Just like construction workers, we sometimes have accidents. 
+
+To reset the counter:
+
+ `heroku config:add DATE=2012-01-01`
