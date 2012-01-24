@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 200px 0;
+  color: #333;
+  background: #C5C7C2 url(/images/bg.jpg) no-repeat 0 0;
+  text-align: center;
+}
+
+h1 {
+  font: normal 48px/2 Ubuntu, sans-serif;
+}
+
+h2 {
+  font: normal 148px/1 Lobster, cursive;
+}
