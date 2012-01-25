@@ -3,15 +3,22 @@
   margin: 0;
 }
 
+html {
+  background: url(/images/factory.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   padding: 200px 0;
-  color: #333;
-  background: #C5C7C2 url(/images/bg.jpg) no-repeat 0 0;
+  color: #fff;
   text-align: center;
 }
 
 h1 {
-  font: normal 48px/2 Ubuntu, sans-serif;
+  font: bolder 48px/2 Ubuntu, sans-serif;
 }
 
 h2 {
