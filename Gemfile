@@ -4,6 +4,7 @@ gem 'rails', '3.2.9.rc2'
 
 group :deployment do
   gem 'pg'
+  gem 'omniauth-twitter'
 end
 
 group :development, :test do
