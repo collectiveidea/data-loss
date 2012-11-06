@@ -2,7 +2,7 @@ require "bundler/setup"
 require "sinatra/base"
 
 class DataLoss < Sinatra::Base
-  get "/" do
+  ROOT_HANDLER = proc {
     date = begin 
       Date.parse(ENV['DATE'])
     rescue
@@ -11,7 +11,10 @@ class DataLoss < Sinatra::Base
 
     @days = (date...Date.today).to_a.size
     erb :index
-  end
+  }
+
+  get "/", &ROOT_HANDLER
+  get "/collectiveidea", &ROOT_HANDLER
 
   get "/bkeepers" do
     date = begin 
