@@ -2,9 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9.rc2'
 
+gem 'omniauth-twitter'
+
 group :deployment do
   gem 'pg'
-  gem 'omniauth-twitter'
 end
 
 group :development, :test do
