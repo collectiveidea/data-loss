@@ -1,4 +1,4 @@
 Dataloss::Application.routes.draw do
-  resources :users
+  match ':id' => 'users#show'
   root :to => 'users#index'
 end
