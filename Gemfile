@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.9.rc2'
 
 gem 'omniauth-twitter'
+gem 'unicorn'
 
 group :deployment do
   gem 'pg'
@@ -10,7 +11,6 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'unicorn'
   gem 'debugger'
   gem 'dotenv'
 end
