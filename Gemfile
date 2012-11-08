@@ -12,6 +12,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'unicorn'
   gem 'debugger'
+  gem 'dotenv'
 end
 
 # Gems used only for assets and not required

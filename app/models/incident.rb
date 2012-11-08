@@ -1,5 +1,5 @@
 class Incident < ActiveRecord::Base
-  attr_accessible :date, :twitter_id
+  attr_accessible :date
 
   scope :recent, order('date DESC')
 

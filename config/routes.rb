@@ -1,4 +1,5 @@
 Dataloss::Application.routes.draw do
-  match ':id' => 'users#show'
-  root :to => 'users#index'
+  match '/auth/:provider/callback', to: 'sessions#create'
+  match ':id' => 'incidents#show'
+  root :to => 'incidents#index'
 end
