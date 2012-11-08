@@ -10,7 +10,7 @@ class IncidentsController < ApplicationController
   end
 
   def new
-    @incident = Incident.new
+    @incident = Incident.new(date: Date.current)
     @incident.twitter_id = session[:username]
   end
   
