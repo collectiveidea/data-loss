@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def create
-    session[:username] = auth_hash['uid']
+    session[:username] = auth_hash['info']['nickname']
     redirect_to new_incident_path
   end
 
