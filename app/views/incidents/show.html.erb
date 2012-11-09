@@ -1,2 +1,4 @@
 <h1>Days Since a Data Loss Accident for <%= "@#{@incident.twitter_id}" %></h1>
 <h2><%= @incident.days %></h2>
+
+<%= render 'form' if signed_in? %>
