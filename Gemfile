@@ -4,6 +4,7 @@ gem 'rails', '3.2.9.rc2'
 
 gem 'omniauth-twitter'
 gem 'unicorn'
+gem 'crashlog'
 
 group :deployment do
   gem 'pg'

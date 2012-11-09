@@ -38,6 +38,15 @@ GEM
       execjs
     coffee-script-source (1.4.0)
     columnize (0.3.6)
+    crashlog (1.0.5)
+      crashlog-auth-hmac (~> 1.1.6)
+      faraday (~> 0.8.4)
+      hashr
+      json
+      multi_json (>= 1.1.0)
+      rabl (>= 0.6.13)
+      uuid
+    crashlog-auth-hmac (1.1.6)
     debugger (1.2.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
@@ -49,7 +58,10 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
     hashie (1.2.0)
+    hashr (0.0.22)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -58,12 +70,15 @@ GEM
       thor (~> 0.14)
     json (1.7.5)
     kgio (2.7.4)
+    macaddr (1.6.1)
+      systemu (~> 2.5.0)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.3.7)
+    multipart-post (1.1.5)
     oauth (0.4.7)
     omniauth (1.1.1)
       hashie (~> 1.2)
@@ -76,6 +91,9 @@ GEM
       omniauth-oauth (~> 1.0)
     pg (0.14.1)
     polyglot (0.3.3)
+    rabl (0.7.6)
+      activesupport (>= 2.3.14)
+      multi_json (~> 1.0)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -113,6 +131,7 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.6)
+    systemu (2.5.2)
     thor (0.16.0)
     tilt (1.3.3)
     treetop (1.4.12)
@@ -126,12 +145,15 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    uuid (2.3.5)
+      macaddr (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  crashlog
   debugger
   dotenv
   jquery-rails
