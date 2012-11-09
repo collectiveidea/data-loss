@@ -31,3 +31,7 @@ h2 {
   font: normal 350px/1 Lobster, cursive;
   text-shadow: 0 0 1px #000, 0 0 20px #000;
 }
+
+input {
+  font: bolder 48px/2 Ubuntu, sans-serif;
+}

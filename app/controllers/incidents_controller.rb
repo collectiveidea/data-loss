@@ -1,5 +1,5 @@
 class IncidentsController < ApplicationController
-  before_filter :user_required, only: [:new, :create]
+  # before_filter :user_required, only: [:new, :create]
 
   def index
     @incident = Incident.recent.first

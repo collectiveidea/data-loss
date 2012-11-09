@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Days Since a Data Loss Accident</title>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu|Lobster" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" media="screen">
+    <%= stylesheet_link_tag 'application' %>
   </head>
   <body>
     <%= yield %>
     
+    <% if Rails.env.production? %>
     <script>
       var _gauges = _gauges || [];
       (function() {
@@ -21,5 +22,6 @@
         s.parentNode.insertBefore(t, s);
       })();
     </script>
+    <% end %>
   </body>
 </html>
