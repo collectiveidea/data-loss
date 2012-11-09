@@ -6,7 +6,13 @@ class IncidentsController < ApplicationController
   end
 
   def show
-    @incident = Incident.where(twitter_id: params[:id]).recent.first
+    @incident = Incident.where(twitter_id: params[:id]).recent.first!
+    respond_to do |format|
+      format.html
+      format.json do
+        render json: {username: @incident.twitter_id, date: @incident.date}
+      end
+    end
   end
 
   def new
