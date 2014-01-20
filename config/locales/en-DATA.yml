@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en-DATA:
+  title: "Days Since a Data Loss Accident"
+  everyone:
+    header: "Days Since a Data Loss Accident for All Users"
+  individual:
+    header: "Days Since a Data Loss Accident for %{user}"
+    declare: "I lost data."
+    claim: "Claim my page"
+    submit: "Yep, @#{user} lost data."

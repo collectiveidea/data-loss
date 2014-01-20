@@ -1,4 +1,4 @@
 <%= form_for @incident do |f| %>
   <%= f.hidden_field :date %>
-  <%= f.submit "Yep, @#{@incident.twitter_id} is sick." %>
+  <%= f.submit t('individual.submit', user: @incident.twitter_id) %>
 <% end %>

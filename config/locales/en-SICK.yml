@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en-SICK:
+  title: "Days Since a Sickness"
+  everyone:
+    header: "Days since any user was sick"
+  individual:
+    header: "Days since %{user} was sick"
+    declare: "I am sick."
+    claim: "Claim my page"
+    submit: "Yep, @#{user} is sick."
