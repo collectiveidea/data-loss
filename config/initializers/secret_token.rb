@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Dataloss::Application.config.secret_key_base = '927c05359265a447bf052f17e44b222db0c0f756da55503f6af9ce451c767141ad619f415aaa8bd6edcff70149ed6219501ed55f2009ba044e2d737847877c61'
+Dataloss::Application.config.secret_key_base = Figaro.env.secret_key_base!

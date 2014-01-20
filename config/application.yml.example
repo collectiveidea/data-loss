@@ -1,3 +1,4 @@
+SECRET_KEY_BASE: something-at-least-thirty-characters-long
 TWITTER_CONSUMER_KEY: key-goes-here
 TWITTER_CONSUMER_SECRET: secret-goes-here
 LOCALE: en-DATA
