@@ -6,6 +6,7 @@ gem 'rails', '~> 4.0.2'
 gem 'omniauth-twitter'
 gem 'unicorn'
 gem 'crashlog'
+gem 'figaro', github: 'laserlemon/figaro'
 
 # Assets
 gem 'coffee-rails', '~> 4.0.0'
@@ -21,6 +22,5 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'debugger'
-  gem 'dotenv'
 end
 
