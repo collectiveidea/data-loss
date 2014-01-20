@@ -1,5 +1,11 @@
 Just like construction workers, we sometimes have accidents.
 
+For that this powers: http://dataloss.herokuapp.com
+
+We also get sick, for that it powers: http://sicklysearls.herokuapp.com
+
+It abuses i18n to make it happen, so just create the proper locale files.
+
 You'll need at least one incident:
   i = Incident.new :date => '2012-01-01'
   i.twitter_id = 'yourname'
