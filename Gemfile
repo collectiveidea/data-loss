@@ -1,11 +1,17 @@
 source 'https://rubygems.org'
 ruby '2.1.0'
 
-gem 'rails', '~> 3.2.12'
+gem 'rails', '~> 4.0.2'
 
 gem 'omniauth-twitter'
 gem 'unicorn'
 gem 'crashlog'
+
+# Assets
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'sass-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
 
 group :deployment do
   gem 'pg'
@@ -17,10 +23,3 @@ group :development, :test do
   gem 'dotenv'
 end
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
-
-gem 'jquery-rails'
