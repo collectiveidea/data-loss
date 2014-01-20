@@ -15,6 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :deployment do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
