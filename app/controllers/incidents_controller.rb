@@ -28,7 +28,8 @@ class IncidentsController < ApplicationController
   end
   
   def create
-    @incident = Incident.new(params[:incident])
+    incident_params = params.require(:incident).permit(:date)
+    @incident = Incident.new(incident_params)
     @incident.twitter_id = session[:username]
     @incident.save!
     redirect_to incident_path(@incident.twitter_id)
