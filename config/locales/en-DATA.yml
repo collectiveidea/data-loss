@@ -9,4 +9,4 @@ en-DATA:
     header: "Days Since a Data Loss Accident for %{user}"
     declare: "I lost data."
     claim: "Claim my page"
-    submit: "Yep, @#{user} lost data."
+    submit: "Yep, @%{user} lost data."

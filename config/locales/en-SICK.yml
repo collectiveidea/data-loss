@@ -9,4 +9,4 @@ en-SICK:
     header: "Days since %{user} was sick"
     declare: "I am sick."
     claim: "Claim my page"
-    submit: "Yep, @#{user} is sick."
+    submit: "Yep, @%{user} is sick."
